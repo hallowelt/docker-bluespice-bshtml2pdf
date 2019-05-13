@@ -1,6 +1,6 @@
-FROM tomcat:9
+FROM tomcat:9-jre8-alpine
 
 WORKDIR /usr/local/tomcat/webapps
-RUN wget http://buildservice.bluespice.com/REL1_27/webservices/bshtml2pdf/BShtml2PDF.war
+RUN wget https://buildservice.bluespice.com/webservices/REL1_31/BShtml2PDF.war
 
 EXPOSE 8080
